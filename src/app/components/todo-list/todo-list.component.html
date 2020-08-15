@@ -1,0 +1,7 @@
+<div class="todo-list">
+  <app-todo
+    *ngFor="let todo of todos"
+    [todo]="todo"
+    (click)="complete(todo)"
+  ></app-todo>
+</div>

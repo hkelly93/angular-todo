@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+@import "../../variables.scss";
+
+header {
+  background-color: $primary;
+  color: #fff;
+  padding: 20px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid lighten($primary, 15%);
+}

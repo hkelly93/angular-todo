@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+.todo {
+  list-style: none;
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: row;
+  background-color: $grey;
+  border-radius: 15px;
+  padding: 10px 20px;
+  justify-content: space-between;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .complete {
+    color: $primary;
+
+    &:hover {
+      color: darken($primary, 15%);
+      cursor: pointer;
+    }
+  }
+}
