@@ -3,13 +3,17 @@
 .todo {
   list-style: none;
   margin-bottom: 15px;
-
   display: flex;
   flex-direction: row;
   background-color: $grey;
   border-radius: 15px;
   padding: 10px 20px;
   justify-content: space-between;
+  font-size: 22px;
+
+  &:hover {
+    background-color: darken($grey, 10%);
+  }
 
   .title {
     font-weight: bold;
