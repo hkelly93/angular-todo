@@ -2,6 +2,6 @@
   <app-todo
     *ngFor="let todo of todos | async; trackBy: trackTodoBy"
     [todo]="todo"
-    (click)="complete(todo)"
+    [complete]="complete"
   ></app-todo>
 </div>

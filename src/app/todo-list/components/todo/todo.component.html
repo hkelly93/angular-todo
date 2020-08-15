@@ -1,4 +1,6 @@
 <div class="todo">
   <div class="title">{{ todo.title }}</div>
-  <div class="complete" title="Complete Todo">&#x2713;</div>
+  <div class="complete" title="Complete Todo" (click)="complete(todo)">
+    &#x2713;
+  </div>
 </div>

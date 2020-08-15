@@ -17,9 +17,9 @@ export class TodoListComponent {
   /**
    * Completes a todo.
    */
-  complete(todo: Todo) {
+  complete = (todo: Todo) => {
     this.todoService.completeTodo(todo);
-  }
+  };
 
   trackTodoBy(index: number, todo: Todo) {
     return todo.id;

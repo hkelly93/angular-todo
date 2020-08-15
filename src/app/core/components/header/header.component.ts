@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit {
 
   getTodoCount() {
     return this.todoService.todos.subscribe((todos: Array<Todo>) => {
-      console.log(todos);
       this.todoCount = todos.length;
     });
   }

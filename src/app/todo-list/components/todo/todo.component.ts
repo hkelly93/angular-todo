@@ -9,5 +9,7 @@ import { Todo } from '../../../types';
 export class TodoComponent {
   @Input() todo: Todo;
 
+  @Input() complete: (todo: Todo) => void;
+
   constructor() {}
 }

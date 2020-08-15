@@ -14,3 +14,25 @@ header {
   display: flex;
   flex-direction: row;
 }
+
+.add-todo {
+  margin: 0 calc(50% - 400px);
+
+  &-button {
+    background-color: $secondary;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 10pt;
+    padding: 5px;
+    margin-left: 10px;
+    color: #323232;
+    font-weight: bold;
+    width: 45px;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken($secondary, 15%);
+    }
+  }
+}
