@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Todo } from '../components/todo-list/types';
+import { Todo } from '../../types';
 import { Subject, Observable, BehaviorSubject } from 'rxjs';
 
 type TodoList = Array<Todo>;

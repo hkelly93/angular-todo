@@ -4,14 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoListComponent } from './components/todo-list/todo-list.component';
-import { TodoComponent } from './components/todo/todo.component';
-import { HeaderComponent } from './components/header/header.component';
-import { AlertComponent } from './components/alert/alert.component';
+import { TodoListModule } from './todo-list/todo-list.module';
+import { HeaderComponent } from './core/components/header/header.component';
+import { AlertComponent } from './common/components/alert/alert.component';
 
 @NgModule({
-  declarations: [AppComponent, TodoListComponent, TodoComponent, HeaderComponent, AlertComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [AppComponent, HeaderComponent, AlertComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, TodoListModule],
   providers: [],
   bootstrap: [AppComponent],
 })

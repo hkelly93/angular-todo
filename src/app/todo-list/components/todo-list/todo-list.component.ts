@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Todo } from './types';
-import { TodoService } from '../../services/todo.service';
+import { Component } from '@angular/core';
+import { Todo } from '../../../types';
+import { TodoService } from '../../../core/services/todo.service';
 
 @Component({
   selector: 'app-todo-list',
@@ -19,5 +19,9 @@ export class TodoListComponent {
    */
   complete(todo: Todo) {
     this.todoService.completeTodo(todo);
+  }
+
+  trackTodoBy(index: number, todo: Todo) {
+    return todo.id;
   }
 }
